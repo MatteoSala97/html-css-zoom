@@ -4,13 +4,29 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: black;
-}
-
-
-main div{
+.container {
+    display: flex;
+    width: 100vw;
+  }
+  
+  .image-container {
     display: flex;
     flex-wrap: wrap;
-    
-}
+    position: relative;
+  }
+  
+  .image-container img {
+    max-width: 100%; 
+    height: auto; 
+    padding: 5px;
+
+  }
+
+  .status{
+    color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+  }
+  
