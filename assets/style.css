@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    /* border: 1px solid red; */
 }
 
 header, main{
@@ -29,6 +31,7 @@ header div span{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 50px;
 }
   
 .image-container {
@@ -40,7 +43,7 @@ header div span{
 .image-container img {
     max-width: 100%; 
     height: auto; 
-    padding: 5px;
+    padding: 10px;
 
 }
 
@@ -56,16 +59,18 @@ header div span{
 }
 
 footer{
-    background-color: #222222;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-
-    position: relative fixed;
+    height: 150px;
     width: 100%;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
 
-    padding: 20px;
+    background-color: #222222;
+    color: white;
+    /* padding: 20px; */
 }
 
 footer span{
@@ -80,6 +85,8 @@ footer span{
     display: flex;
     justify-content: space-around;
     gap: 20px;
+
+    align-items: center;
 }
 
 .bottom-left div,
@@ -93,4 +100,10 @@ footer span{
 
 .bottom-right{
     background-color: rgba(128, 128, 128, 0.50);
+    height: 100%;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+
+    color: red;
 }
