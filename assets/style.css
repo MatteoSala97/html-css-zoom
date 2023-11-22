@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-body{
-    /* background-color: black; */
+header, main{
+    background-color: black;
 }
 
 header div{
@@ -13,6 +13,9 @@ header div{
     margin-top: 5px;
     display: flex;
     justify-content: flex-end;
+
+    position: fixed;
+    width: 100%;
 }
 
 header div span{
@@ -31,6 +34,7 @@ header div span{
 .image-container {
     display: flex;
     position: relative;
+    margin-block: 60px;
 }
   
 .image-container img {
@@ -54,6 +58,12 @@ header div span{
 footer{
     background-color: #222222;
     color: white;
+    display: flex;
+    justify-content: space-between;
+
+    position: relative fixed;
+    width: 100%;
+
 
     padding: 20px;
 }
@@ -61,4 +71,26 @@ footer{
 footer span{
     display: block;
     padding-block: 10px;
+    text-transform: capitalize;
+}
+
+.bottom-left,
+.bottom-center,
+.bottom-right{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.bottom-left div,
+.bottom-center div,
+.bottom-right div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottom-right{
+    background-color: rgba(128, 128, 128, 0.50);
 }
